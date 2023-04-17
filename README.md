@@ -2,7 +2,7 @@
 
 <i>В условиях импортозамещения организация СAPRICORN имеет гибридную инфраструктуру в офисах двух городов России.</i>
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/topologya.png?raw=true)
+![Image alt](https://github.com/Giopikcha/blob/main/images/topologya.png?raw=true)
 
 | Имя устройства | ОС               | IP-адреса                         |
 |----------------|-----------------|----------------------------------|
