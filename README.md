@@ -252,7 +252,7 @@ firewall-cmd --permanent --zone=internal --add-interface=wg0
 firewall-cmd --reload
 ```
 #### Результат:
-![Image alt](https://github.com/Giopikcha/Qualification_Exam_PM.03/blob/main/images/wireguard.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/wireguard.png?raw=true)
 
 
 ### Вариант через GRE+IPSec:  
@@ -403,7 +403,7 @@ firewall-cmd --permanent --zone=internal --add-protocol=esp
 firewall-cmd --reload
 ```
 #### Результат:
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/GRE_IPSec.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/GRE_IPSec.png?raw=true)
 
 
 * Должна использоваться динамическая маршрутизация для связи между офисами.  В Перми и Смоленске.  
@@ -482,7 +482,7 @@ firewall-cmd --permanent --zone=internal --add-protocol=ospf
 firewall-cmd --reload
 ```
 #### Результат:
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/OSPF.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/OSPF.png?raw=true)
 
 
 * Контроллер домена в Перми (DC-W) является сервером времени для обоих офисов в Смоленске и Перми.  
@@ -490,11 +490,11 @@ firewall-cmd --reload
 **DC-W**  
 *Проверить настройки сетевого Адаптера:*  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_IP.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_IP.png?raw=true)
 
 *Настроить синхранизацию времени с провайдером - ISP:*  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_NTP.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_NTP.png?raw=true)
 
 **RTR-L и RTR-R**  
 *Настройка синзронизации времени с DC-W:*  
@@ -523,31 +523,31 @@ firewall-cmd --reload
 * DC-W должен являться контроллером домена организации и обслуживать DNS-зону второго уровня СAPRICORN.FIRST.
 *Установка необходимых ролей:*  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_roles.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_roles.png?raw=true)
 
 *Повышение до уровня контроллера домена:*  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_ADDC1.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_ADDC1.png?raw=true)
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_ADDC2.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_ADDC2.png?raw=true)
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_ADDC3.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_ADDC3.png?raw=true)
 
 *Управление доменом:*   
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_ADAdministration.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_ADAdministration.png?raw=true)
 
 *Настройка DNS-сервера:*   
 
 *Создание зон обратного просмотра:*  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/reverce_zone200.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/reverce_zone200.png?raw=true)
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/reverce_zone100.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/reverce_zone100.png?raw=true)
 
 *Добавления необходимых записей в зону прямого просмотра:*  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_DNS.png)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_DNS.png)
 
 * Все узлы (в том числе платформы управления трафиком) должны быть доступны по имени.
 
@@ -559,7 +559,7 @@ vim /etc/resolv.conf
 ```
 
 #### Результат:
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DNS.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DNS.png?raw=true)
 
 
 
@@ -569,27 +569,27 @@ vim /etc/resolv.conf
 **DC-W**  
 *Настройка DHCP сервера для офиса в Перми:*  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_DHCP1.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_DHCP1.png?raw=true)
 
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_DHCP2.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_DHCP2.png?raw=true)
 
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_DHCP3.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_DHCP3.png?raw=true)
 
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_DHCP4.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_DHCP4.png?raw=true)
 
 #### Результат с CLI-A:
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/CLI-A_DHCP.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/CLI-A_DHCP.png?raw=true)
 
 **SRV-A**  
 *Настройка DHCP сервера для офиса в Смоленске:*  
 
 *Проверка параметров сетевого Адаптера:*
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/SRV-A_IP.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/SRV-A_IP.png?raw=true)
 
 *Установка пакета:*  
 ```
@@ -621,27 +621,27 @@ systemctl enable --now dhcpd.service
 ```
 #### Результат с CLI-W:  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/CLI-W_DHCP.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/CLI-W_DHCP.png?raw=true)
 
 ## Ввод в домен:  
 
 *Ввод в домен CLI-A:* 
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/CLI-A-AD.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/CLI-A-AD.png?raw=true)
 
 *Ввод в домен CLI-W:* 
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/CLI-W_AD.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/CLI-W_AD.png?raw=true)
 
 *Ввод в домен SRV-A:* 
 ```
 apt-get install -y task-auth-ad-sssd
 ```
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/SRV-A_AD.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/SRV-A_AD.png?raw=true)
 
 #### Результат:  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/DC-W_ADComputers.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/DC-W_ADComputers.png?raw=true)
 
 
 * Между клиентскими компьютерами офисов должна быть реализована телефонная связь посредством софтфонов на основе SIP. Номера в Перми должны начинаться с 342, в Смоленске – с 481.  
@@ -896,23 +896,23 @@ firewall-cmd --reload
 
 #### sip.conf:  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/asterisk_sip_conf.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/asterisk_sip_conf.png?raw=true)
 
 #### extensions.conf:  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/asterisk_extensions_conf.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/asterisk_extensions_conf.png?raw=true)
 
 #### sip show peers:  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/asterisk_sip_show_peers.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/asterisk_sip_show_peers.png?raw=true)
 
 #### Звонок внутри офиса в Смоленкске:  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/VNUTR_VUZOV.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/VNUTR_VUZOV.png?raw=true)
 
 #### Междугородний звонок из Перми в Смоленск:  
 
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/GORODSKOI_ZVONOK.png?raw=true)
+![Image alt](https://github.com/Giopikcha/kepeer/blob/main/images/GORODSKOI_ZVONOK.png?raw=true)
 
 
 * На сервере офиса в Смоленске должен быть развёрнут корпоративный веб-портал, который в целях безопасности запускается в контейнере.  
