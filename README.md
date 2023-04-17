@@ -252,7 +252,7 @@ firewall-cmd --permanent --zone=internal --add-interface=wg0
 firewall-cmd --reload
 ```
 #### Результат:
-![Image alt](https://github.com/NewErr0r/Qualification_Exam_PM.03/blob/main/images/wireguard.png?raw=true)
+![Image alt](https://github.com/Giopikcha/Qualification_Exam_PM.03/blob/main/images/wireguard.png?raw=true)
 
 
 ### Вариант через GRE+IPSec:  
